@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Yuji+Hentaigana+Akebono&display=swap" rel="stylesheet">
+    <script src="./dist/js/script.js" defer></script>
+
+    <style>
+        @media (min-width: 320px) {
+            .arsany {
+            height: 900px;
+            width:min-content;
+            }
+        }
+        @media (min-width: 768px) {
+        .arsany {
+        height: 350px;
+        width:auto;
+        }
+    }
+    @media (min-width: 1024px) {
+        .arsany {
+        height: 375px;
+        width:auto;
+        }
+    }
+
+
+    @media (min-width: 1280px) {
+        .arsanyy{ 
+            height: 590px; 
+            width: 600px;
+        }
+    }
+
+
+
+    </style>
+
+</head>
+<body style="font-family: 'Cairo', sans-serif;">
+
+<div class="mx-auto" >
+    
+        <nav style="background-image: url('./dist/images/slide-img.jpg'); background-repeat: no-repeat; background-size: cover;  width: 100%; height: 720px;">
+    
+                <div class="right-5 top-8 md:right-16 md:top-10  absolute">
+                    <img src="./dist/images/رحلاتي .@2x.png" alt="" class=" w-24 h-6   md:h-8 md:w-32 xl:h-10 xl:w-40">
+                </div>
+    
+                <button id="mobile-btn" class="md:hidden top-7 bg-white left-5 absolute rounded-md">
+                    <img src="./dist/images/burger-bar.png" alt="" class="h-8 w-8 ">
+                </button> 
+
+                <div class="md:hidden">
+                    <div id="mobile-menu" class="absolute z-10 flex flex-col  py-8 px-12 ml-10 mt-12  font-bold text-center rounded-xl gap-y-3 hover:bg-orange-300" style="background-color: #F1EFFD; ">
+                        <a href="#">الرحلات</a>
+                        <a href="#">الخدمات</a>
+                        <a href="#">الاسعار</a>
+                        <a href="#">آراء العملاء</a>
+                        <a href="#">اتصل بنا</a>
+                    </div>
+                </div>
+        
+                <div class=" md:text-white md:absolute md:top-11">
+                    <li class="hidden list-none md:gap-x-3 md:flex md:flex-row-reverse md:ml-56 md:text-base lg:text-xl lg:ml-72 lg:space-x-7 xl:text-2xl xl:ml-96 xl:pl-12">
+                        <a href="#">الرحلات</a>
+                        <a href="#">الخدمات</a>
+                        <a href="#">الاسعار</a>
+                        <a href="#">آراء العملاء</a>
+                        <a href="#">اتصل بنا</a>
+                    </li>
+                </div>
+    
+                <div class="hidden md:absolute md:text-white md:flex md:flex-row-reverse md:gap-4 md:top-10 md:left-16 md:text-xl xl:text-2xl">
+                    <a href="#">يوتيوب</a>
+                    <img src="./dist/images/youtube.svg" alt="">
+                </div> 
+    
+    
+                <div class="text-white relative top-32 md:top-64 flex justify-center md:space-y-8 space-y-7">
+                    <p class="font-bold text-5xl  md:text-7xl text-center ">سافر معنا إلى العالم</p>
+                    <!-- <p class="md:whitespace-pre text-center mx-auto md:text-xl text-lg md:w-96 w-64">نوفر لك أفضل الرحلات التي تحتاجها لجميع البلدان
+    وبخدمات مخصصة لك ولعائلتك</p> -->
+                </div>
+    
+                <div class="rounded-lg h-9  relative  md:w-40 w-52 top-80 md:top-80  mt-14 mx-auto" dir="rtl"  style="background-color: #FEC430;">
+                    <div class="flex items-center justify-center gap-4">
+                        <a href="#" for="bob" class="font-bold">احجز الآن</a>
+                        <img src="./dist/images/arrow.svg" alt="" id="bob" class="mt-0.5">
+                    </div>
+                </div>
+                
+    
+                <div class="absolute top-96 mt-32  md:left-56 md:mt-32  lg:left-80 lg:ml-10  xl:left-96 xl:ml-40         2xl:mt-20 2xl:left-96 2xl:ml-52">
+                    <img src="./dist/images/36022-middle-removebg-preview.png" alt="" class="h-32 w-32">
+                </div>
+    
+                <div class="relative top-80 mt-20 text-center text-white">
+                    <p class="text-xl font-semibold">تابع للأسفل</p>
+                </div>
+    
+                <div class="relative top-80  ">
+                    <div class="flex justify-center items-center">
+                        <img src="./dist/images/Mouse.svg" alt="">
+                    </div>
+                </div>   
+    
+        </nav>
+    
+        <div class=" mt-16 md:mr-14 mr-10  space-y-4 "  dir="rtl">
+            <div>
+                <p class="md:text-xl text-lg" style="color: #A5A5A5;">قم بزيارة العالم</p>
+            </div>
+            <div>
+                <p class="font-bold md:text-4xl text-3xl " style="color: #191919;">الرحلات التي نقدمها</p>
+            </div>
+        </div>
+    
+        <section class="wrapper mt-9 px-4 flex">
+            <div class="carousel flex space-x-5 overflow-hidden px-10">
+                <img src="./dist/images/cairo-img.png" alt="" draggable="false" >
+                <img src="./dist/images/dubai-img .png" alt="" draggable="false">
+                <img src="./dist/images/istanbul-img.png" alt="" draggable="false">
+                <img src="./dist/images/istanbul-img.png" alt="" draggable="false">
+                <img src="./dist/images/dubai-img .png" alt="" draggable="false">
+                <img src="./dist/images/cairo-img.png" alt="" draggable="false">
+            </div>
+        </section>
+        
+        <div class="mt-20 space-y-4">
+            <p class="text-xl text-center" style="color: #A5A5A5;">تمتع في رحلتك</p>
+            <p class="text-4xl text-center font-bold">مجموعة من خدماتنا</p>
+        </div>
+    
+        <div class="rounded-2xl mx-auto md:h-80 mt-10" style="background-color: #F1EFFD; width: 90%;">
+            <div class=" flex md:flex-row flex-col justify-around py-9 md:py-0 space-y-14">
+                
+                <div class="text-center mx-auto my-auto mt-14">
+                    <img src="./dist/images/services-icon-03.png" alt="" class="h-32 w-32 mx-auto md:ml-5 lg:ml-16" >
+                    <p class=" font-semibold " style="color: #191919;">رحلات ميدانية</p>
+                    <p class="text-sm w-52 md:w-40 lg:w-64 flex text-center " style="color: #4C4C4C;">لن تكون إجازتك مملة معنا فهنا الكثير من الخطط والرحلات المختلفة.</p>
+                </div>
+                
+                <div class="text-center mx-auto">
+                    <img src="./dist/images/services-icon-02.png" alt="" class="h-32 w-32  md:flex-row-reverse mx-auto md:ml-5 lg:ml-16">
+                    <p class=" font-semibold " style="color: #191919;">حجوزات فندقية</p>
+                    <p class="text-sm w-52 md:w-40 lg:w-64  flex text-center " style="color: #4C4C4C;">لا تقلق حول مكان إقامتك فنحن نهتم بكامل الحجوزات الخاصة بك.</p>
+                </div>
+    
+                <div class="text-center mx-auto">
+                    <img src="./dist/images/services-icon-01.png" alt="" class="h-32 w-32 mx-auto md:ml-5 lg:ml-16">
+                    <p class=" font-semibold " style="color: #191919;">دليل سياحي</p>
+                    <p class="text-sm w-52 md:w-40 lg:w-64 flex text-center " style="color: #4C4C4C;">نقدم لك خدمات الإرشاد السياحي لبناء خطط سفر مميزة.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="mt-16 md:mr-14 mr-10 space-y-4 " dir="rtl">
+            <div>
+                <p class="md:text-xl text-lg" style="color: #A5A5A5;">لا تقلق حول التكلفة</p>
+            </div>
+            <div>
+                <p class="font-bold md:text-4xl text-3xl" style="color: #191919;">خطط تناسب ميزانيتك</p>
+            </div>
+        </div>
+    
+        <div class="columns-3 flex flex-col-reverse md:flex-row md:space-x-7 xl:justify-center md:px-4 xl:px-0 ">
+    
+            <div class="rounded-3xl border-2 border-black  h-96 mx-auto md:mx-0 w-72  md:w-80 mt-20" dir="rtl" style="background-color: #FFE7AC;box-shadow: 7px 7px;">
+                <div class="mt-4 space-y-1">
+                    <div class="mr-4"> <span class="font-bold text-3xl">$850</span> <span class="font-semibold">/ للشخص</span> </div>
+                    <div class="font-bold mr-4">خطة رجال الأعمال</div>
+                    <div class="pt-3 mr-4 pb-3" style="color:#191919;">كونك شخص ذو ذوق خاص ستكون هذه الخطة هي ما يناسبك تماماً</div>
+                    <hr class="pt-7 mx-auto" style=" border-top: 1px solid black; width: 88%;">
+                    <div class="space-y-10">
+                        <div class="space-y-1 md:text-sm lg:text-base ">
+                            <div class="mr-4 font-medium">بطاقات سفر بدرجة رجال الأعمال</div>
+                            <div class="mr-4 font-medium">حجز بفندق خمس نجوم</div>
+                            <div class="mr-4 font-medium">متابعة خاصة لإحتياجاتك</div>
+                        </div>
+                        <div class="rounded-lg h-9 border-2  border-black md:w-52 w-52 top-80 md:top-32 mx-auto" dir="rtl">
+                            <div class="flex items-center justify-center gap-4">
+                                <a href="#" for="bob" class="font-bold">احجز الآن</a>
+                                <img src="./dist/images/arrow.svg" alt="" id="bob" class="mt-0.5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="rounded-3xl border-2 border-black  h-96 mx-auto md:mx-0  w-72  md:w-80  mt-11" dir="rtl" style="background-color: #46368B; box-shadow: 7px 7px;">
+                <div class="mt-4 space-y-1">
+                    <div class="mr-4"> <span class="font-bold text-3xl">$850</span> <span class="font-semibold">/ للشخص</span> </div>
+                    <div class="font-bold mr-4">خطة رجال الأعمال</div>
+                    <div class="pt-3 mr-4 pb-3" style="color:#191919;">كونك شخص ذو ذوق خاص ستكون هذه الخطة هي ما يناسبك تماماً</div>
+                    <hr class="pt-7 mx-auto" style=" border-top: 1px solid black; width: 88%;">
+                    <div class="space-y-10">
+                        <div class="space-y-1 md:text-sm lg:text-base ">
+                            <div class="mr-4 font-medium">بطاقات سفر بدرجة رجال الأعمال</div>
+                            <div class="mr-4 font-medium">حجز بفندق خمس نجوم</div>
+                            <div class="mr-4 font-medium">متابعة خاصة لإحتياجاتك</div>
+                        </div>
+                        <div class="rounded-lg h-9 border-2  border-black md:w-52 w-52 top-80 md:top-32 mx-auto" dir="rtl">
+                            <div class="flex items-center justify-center gap-4">
+                                <a href="#" for="bob" class="font-bold">احجز الآن</a>
+                                <img src="./dist/images/arrow.svg" alt="" id="bob" class="mt-0.5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="rounded-3xl border-2 border-black  h-96 mx-auto md:mx-0  w-72  md:w-80 mt-20 " dir="rtl" style="background-color: #FFE7AC;box-shadow: 7px 7px;">
+                <div class="mt-4 space-y-1">
+                    <div class="mr-4"> <span class="font-bold text-3xl">$850</span> <span class="font-semibold">/ للشخص</span> </div>
+                    <div class="font-bold mr-4">خطة رجال الأعمال</div>
+                    <div class="pt-3 mr-4 pb-3" style="color:#191919;">كونك شخص ذو ذوق خاص ستكون هذه الخطة هي ما يناسبك تماماً</div>
+                    <hr class="pt-7 mx-auto" style=" border-top: 1px solid black; width: 88%;">
+                    <div class="space-y-10">
+                        <div class="space-y-1 md:text-sm lg:text-base">
+                            <div class="mr-4 font-medium">بطاقات سفر بدرجة رجال الأعمال</div>
+                            <div class="mr-4 font-medium">حجز بفندق خمس نجوم</div>
+                            <div class="mr-4 font-medium">متابعة خاصة لإحتياجاتك</div>
+                        </div>
+                        <div class="rounded-lg h-9 border-2  border-black md:w-52 w-52 top-80 md:top-32 mx-auto" dir="rtl">
+                            <div class="flex items-center justify-center gap-4">
+                                <a href="#" for="bob" class="font-bold">احجز الآن</a>
+                                <img src="./dist/images/arrow.svg" alt="" id="bob" class="mt-0.5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="text-center mt-20">
+            <div>
+                <p class="md:text-xl text-lg" style="color: #A5A5A5;">قالوا عنا</p>
+            </div>
+            <div>
+                <p class="font-bold md:text-4xl text-3xl" style="color: #191919;">آراء مجموعة من عملائنا</p>
+            </div>
+        </div>
+    
+        <div class="md:columns-3 flex-col md:flex-row  flex  md:justify-around mt-16 space-y-4 md:space-y-0 mx-auto md:mx-0">
+    
+            <div class="lg:h-52 md:h-56  h-52 md:w-96 w-80  rounded-3xl mx-auto md:mx-4 xl:mx-0" style="background-color: #F1EFFD;">
+                <div class="flex space-x-1 mt-5 mr-5" dir="rtl">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                </div>
+                <div class="flex mr-5 mt-5 flex-row-reverse" >
+                    <img src="./dist/images/user-avatar-02.jpg" alt="" height="22px" width="32px">
+                    <p class="font-bold text-2xl mr-4">أسامة الأبيض</p>
+                </div>
+                <div class="mr-5 md:mt-6 mt-3 pl-4" dir="rtl">
+                    <p class="lg:text-base md:text-sm" style="color: #4C4C4C;">يمكنني القول إنني قمت بقطاء أفضل رحلة عائلة على الإطلاق، كان الفنادق رائعة وخطة السفر ممتازة جداًومريحة.</p>
+                </div>
+            </div>
+    
+            <div class="lg:h-52 md:h-56 h-52 md:w-96 w-80 rounded-3xl mx-auto md:mx-4 xl:mx-0" style="background-color: #F1EFFD;">
+                <div class="flex space-x-1 mt-5 mr-5" dir="rtl">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                </div>
+                <div class="flex mr-5 mt-5 flex-row-reverse " >
+                    <img src="./dist/images/user-avatar-03.jpg" alt="" height="22px" width="32px">
+                    <p class="font-bold text-2xl mr-4" dir="rtl">ماهر  اللطيف</p>
+                </div>
+                <div class="mr-5 md:mt-6 mt-3 pl-4" dir="rtl">
+                    <p class="lg:text-base md:text-sm" style="color: #4C4C4C;">تقدم شركة رحلاتي خدمات مناسبة جداً لرجال الأعمال، هذا ما ساعدني في رحلتي وجعلني اختصر جداً من مشاكل الحجوزات.</p>
+                </div>
+            </div>
+    
+            <div class="lg:h-52 md:h-56 h-52 md:w-96 w-80 rounded-3xl mx-auto md:mx-4 xl:mx-0" style="background-color: #F1EFFD;">
+                <div class="flex space-x-1 mt-5 mr-5" dir="rtl">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                    <img src="./dist/images/star-icon.svg" alt="" height="16px" width="16px">
+                </div>
+                <div class="flex mr-5 mt-5 flex-row-reverse" >
+                    <img src="./dist/images/user-avatar-01.jpg" alt="" height="22px" width="32px">
+                    <p class="font-bold text-2xl mr-4">محمد الأحمد</p>
+                </div>
+                <div class="mr-5 md:mt-6 mt-3 pl-4" dir="rtl">
+                    <p class="lg:text-base md:text-sm" style="color: #4C4C4C;">كانت تجربة مميزة مع خدمات رائعة قضيت أفضل إجازة لي من فترة طويلة، أنصح بالتعامل مع شركة رحلاتيبدون تردد.</p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="mt-16 md:mr-14 mr-10 space-y-4 " dir="rtl">
+            <div>
+                <p class="md:text-xl text-lg" style="color: #A5A5A5;">هل لديك سؤال؟</p>
+            </div>
+            <div>
+                <p class="font-bold md:text-4xl text-3xl" style="color: #191919;">يسعدنا التواصل معك</p>
+            </div>
+        </div>
+    
+        <div class=" mt-16 flex md:flex-row flex-col md:mr-5 xl:mr-14 pb-2 md:gap-x-4 xl:gap-x-12 " dir="rtl">
+    
+            <div class="border-2 border-black rounded-3xl w-11/12 h-screen mx-auto md:mx-0 arsanyy" style="background-color: #FFE7AC; box-shadow:  7px 7px 0px 1px;">
+                <div class="mt-16 flex flex-col space-y-3 ">
+                    <label for="name" class="font-bold mr-7 text-xl">الاسم</label>
+                    <input id="name" type="text" placeholder="    يرجى تسجيل اسمك الكامل" style="color: #A5A5A5; width: 90%; " class="border-2 border-black rounded-2xl h-12 mx-auto">
+                </div>
+                <div class="mt-5 flex flex-col space-y-3 ">
+                    <label for="emaill" class="font-bold mr-7 text-xl">البريد الإلكتروني</label>
+                    <input id="emaill" type="email" placeholder="    سجل بريدك الشخصي" style="color: #A5A5A5; width: 90%; " class="border-2 border-black rounded-2xl h-12 mx-auto">
+                </div>
+                <div class="mt-5 flex flex-col space-y-3 ">
+                    <label for="" class="font-bold mr-7 text-xl">الموضوع</label>
+                    <input type="text" placeholder="    ما هو السؤال أو المشكلة التي لديك؟" style="color: #A5A5A5; width: 90%; " class="border-2 border-black rounded-2xl pt-4 pb-24 mx-auto ">
+                </div>
+                <div>
+                    <p style="color: white;" class="bg-black rounded-xl h-10 w-52 mt-8 mr-7 flex justify-center text-center items-center">أرسل الرسالة</p>
+                </div>
+            </div>
+    
+            <div class="md:space-y-32 space-y-10 md:my-auto mt-9 mx-auto md:mx-0  md:pl-16 lg:pl-40 xl:pl-96 xl:ml-20 ">
+    
+                <div class="flex flex-col text-center  items-center md:flex-row xl:gap-x-1">
+                    <img src="./dist/images/help-icon.png" alt="" class="h-20 w-20 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-28 xl:w-28">
+                    <div class="flex flex-col  mt-2 space-y-3">
+                        <p class="font-bold md:text-2xl text-xl md:ml-14  xl:text-3xl xl:w-72 xl:pl-7">نقدم لك المساعدة</p>
+                        <p class="md:w-64 w-72 xl:w-96 text-sm xl:text-lg " style="color: #4C4C4C;">إن كان لديك اي مشكلة في البلد الذي تسافر إليه سنقوم بمساعدك في هذا الموضوع.</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col text-center  items-center md:flex-row">
+                    <img src="./dist/images/communication-icon.png" alt="" class="h-20 w-20 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-28 xl:w-28">
+                    <div class="flex flex-col mr-3 mt-2 space-y-3">
+                        <p class="font-bold md:text-2xl text-xl md:ml-14  xl:text-3xl xl:w-72 xl:pl-44 ">للتواصل</p>
+                        <p class="md:w-64 w-72 xl:w-80 text-sm xl:text-lg " style="color: #4C4C4C;">يمكنك التواصل معنا عبر الفورم أو عبر البريد
+                            الإلكتروني: <span style="color: #755AE8;"> company@mail.com</span> </p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col text-center  items-center md:flex-row">
+                    <img src="./dist/images/working-hours-icon.png" alt="" class="h-20 w-20 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-28 xl:w-28">
+                    <div class="flex flex-col mr-3 mt-2 space-y-3">
+                        <p class="font-bold md:text-2xl text-xl md:ml-14  xl:text-3xl xl:w-96 xl:pl-52 ">أوقات الدوام</p>
+                        <p class="md:w-64 w-72 xl:w-96 text-sm xl:text-lg " style="color: #4C4C4C;">يمكنك التواصل معنا يومياً أثناء أوقات الدوام من الساعة 9 صباحاً حتى 6 مساءاً.</p>
+                    </div>
+                </div>
+            </div> 
+    
+        </div>
+    
+        <div class="mt-12 arsany  " style="background-color: #191919;  ">
+            
+                <div class="flex md:flex-row-reverse flex-col md:justify-around ">
+    
+                    <div style="color: white; width: 273px;" class="flex flex-col mt-6 ml-32 md:ml-0" dir="rtl">
+                        <img src="./dist/images/رحلاتي ..svg" alt="" class="h-28 w-40">
+                        <p style="color: #797979;" class="text-base mr-6 w-72 md:w-64">شركة متخصصة في مجال السياحة و السفر نقدم خدمات تأمين الرحلات و الحجوزات و الفيز لكل أنحاء العالم.</p>
+                    </div>
+                    <div class="md:columns-4 mt-16 md:mt-0 flex-wrap flex flex-row-reverse md:gap-x-6 gap-x-20 lg:gap-x-16  xl:gap-x-32  justify-center ">
+                        
+                                            <div style="color: white;" class="flex flex-col scroll md:mt-12 gap-y-6  text-center "   >
+                                                <p style="color: #FFF9EA;" class="font-bold text-2xl">حول</p>
+                                                <div class="space-y-4 md:text-sm lg:text-base" style="color: #797979;">
+                                                    <p>الشركة</p>
+                                                    <p>من نحن؟</p>
+                                                    <p>فرص العمل</p>
+                                                    <p>المدونة</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div style="color: white;" class="flex flex-col md:mt-12   gap-y-6 text-center">
+                                                <p style="color: #FFF9EA;" class="font-bold text-2xl">خدماتنا</p>
+                                                <div class="space-y-4 md:text-sm lg:text-base" style="color: #797979;">
+                                                    <p>بطاقات الطيران</p>
+                                                    <p>الرحلات البحرية</p>
+                                                    <p>الفنادق</p>
+                                                    <p>الرحلات البرية</p>
+                                                    <p>تأمين الفيزا</p>
+                                                </div>
+                                            </div>
+                                        
+                            
+                                        
+                                            <div style="color: white;" class="flex flex-col mt-12 gap-y-6 text-center">
+                                                <p style="color: #FFF9EA;" class="font-bold text-2xl">الحجوزات</p>
+                                                <div class="space-y-4 md:text-sm lg:text-base" style="color: #797979;">
+                                                    <p>العروض الجديدة</p>
+                                                    <p>تأكد من حجزك</p>
+                                                    <p>الاشتراكات</p>
+                                                    <p>طرق السفر</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div style="color: white;" class="flex flex-col mt-12 gap-y-6 text-center">
+                                                <p style="color: #FFF9EA;" class="font-bold text-2xl">الموقع</p>
+                                                <div class="space-y-4 md:text-sm lg:text-base" style="color: #797979;">
+                                                    <p>سياسة الخصوصية</p>
+                                                    <p>شروط الاستخدام</p>
+                                                    <p>بلغ عن مشكلة</p>
+                                                    <p>تواصل معنا</p>
+                                                </div>
+                                            </div>
+                    </div>
+
+                    </div>
+
+                    <hr class="mt-6 mx-auto" style="width: 95%; border-top: 1px solid #4C4C4C;">
+
+                    <div class=" flex justify-between pt-4 md:flex-row flex-col-reverse">
+                        <div class="flex  space-x-4  ml-9">
+                            <img src="./dist/images/facebook.svg" alt="" class="h-8 w-8">
+                            <img src="./dist/images/instagram.svg" alt="" class="h-8 w-8">
+                            <img src="./dist/images/y.svg" alt="" class="h-8 w-8">
+                        </div>
+                        <div class=" mr-9 " style="color: #797979;" dir="rtl" >
+                            <p> 2023جميع الحقوق محفوظة لموقع <span style="color:#FEC430 ;" class="whitespace-pre"> للمصمم أحمد سكماني</span></p>
+                        </div>
+                    </div>
+                </div>    
+
+        </div>
+</div>
+
+</body>
+</html>
